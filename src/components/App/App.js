@@ -17,6 +17,7 @@ function App() {
         <main className="main">
           <section className="total">
             <TotalCard />
+            <TotalCard />
           </section>
           <section className="overview">
             <h2 className="overview__title">Overview - Today</h2>
