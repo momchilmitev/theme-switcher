@@ -1,0 +1,46 @@
+.toggle-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 136px;
+  height: 24px;
+  background-color: inherit;
+  cursor: pointer;
+
+  &--dark {
+    & .toggle-btn__body {
+      background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+    }
+
+    & .toggle-btn__slider {
+      transform: translateX(-130%);
+      background-color: #252b42;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #848bab;
+  }
+
+  &__body {
+    position: relative;
+    width: 48px;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #aeb3cb;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 12%;
+    right: 6%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #f1f3fa;
+    transition: 0.4s;
+  }
+}

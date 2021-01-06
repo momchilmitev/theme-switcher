@@ -5,7 +5,7 @@ import OverviewCard from "../OverviewCard/OverviewCard";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app app--dark">
       <div className="container">
         <header className="header">
           <div className="title">
