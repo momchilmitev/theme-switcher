@@ -1,0 +1,60 @@
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 255px;
+  height: 125px;
+  background-color: #f1f3fa;
+  border-radius: 5px;
+
+  &--dark {
+    background-color: #252b42;
+
+    & .media-stats__count {
+      color: #fff;
+    }
+
+    & .media-title__text {
+      color: #8c98c6;
+    }
+  }
+}
+
+.media-title,
+.media-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 17px;
+    color: #63687d;
+  }
+}
+
+.media-stats {
+  align-items: flex-end;
+
+  &__count {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  &__percentage {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1eb589;
+
+    & > img {
+      margin-right: 2px;
+    }
+  }
+}
