@@ -1,5 +1,5 @@
 import "./App.scss";
-import React from "react";
+import React, { useState } from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import TotalCard from "../TotalCard/TotalCard";
 import OverviewCard from "../OverviewCard/OverviewCard";
@@ -48,9 +48,11 @@ const socials = [
 ];
 
 function App() {
+  const [mode, toggleMode] = useState(false);
+  let className = mode ? "app app--dark" : "app";
   const renderTotalContent = () => {
     return socials.map((media) => (
-      <TotalCard key={media.total} media={media} />
+      <TotalCard key={media.total} media={media} mode={mode} />
     ));
   };
 
@@ -64,6 +66,7 @@ function App() {
             views={media.views}
             likes=""
             percentages={media.viewsPercentage}
+            mode={mode}
           />
           <OverviewCard
             key={media.likes}
@@ -71,6 +74,7 @@ function App() {
             views=""
             likes={media.likes}
             percentages={media.likesPercentage}
+            mode={mode}
           />
         </React.Fragment>
       );
@@ -78,9 +82,17 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <div className="background-one"></div>
-      <div className="background-two"></div>
+    <div className={className}>
+      <div
+        className={
+          mode ? "background-one background-one--dark" : "background-one"
+        }
+      ></div>
+      <div
+        className={
+          mode ? "background-two background-two--dark" : "background-two"
+        }
+      ></div>
       <div className="container">
         <header className="header">
           <div className="title">
@@ -88,7 +100,7 @@ function App() {
             <p className="title__description">Total Followers: 23,004</p>
           </div>
           <div className="border"></div>
-          <ToggleButton />
+          <ToggleButton mode={mode} toggleMode={toggleMode} />
         </header>
         <main className="main">
           <section className="total">{renderTotalContent()}</section>

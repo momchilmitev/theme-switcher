@@ -15,7 +15,8 @@ const icons = {
   down: downArrow,
 };
 
-const OverviewCard = ({ icon, views, likes, percentages }) => {
+const OverviewCard = ({ icon, views, likes, percentages, mode }) => {
+  let className = mode ? "overview-card overview-card--dark" : "overview-card";
   let text;
 
   switch (icon) {
@@ -36,7 +37,7 @@ const OverviewCard = ({ icon, views, likes, percentages }) => {
   }
 
   return (
-    <article className="overview-card">
+    <article className={className}>
       <div className="media-title">
         <span className="media-title__text">{views ? text : "Likes"}</span>
         <img

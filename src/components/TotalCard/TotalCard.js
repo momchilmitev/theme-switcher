@@ -15,9 +15,11 @@ const icons = {
   down: downArrow,
 };
 
-const TotalCard = ({ media }) => {
+const TotalCard = ({ media, mode }) => {
+  let className = mode ? "total-card total-card--dark" : "total-card";
+
   return (
-    <article className="total-card">
+    <article className={className}>
       <div className="total-card__user">
         <img src={icons[media.icon]} alt="social media icon" />
         <span>{media.user}</span>
