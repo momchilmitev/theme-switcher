@@ -79,12 +79,15 @@ function App() {
 
   return (
     <div className="app app--dark">
+      <div className="background-one"></div>
+      <div className="background-two"></div>
       <div className="container">
         <header className="header">
           <div className="title">
             <h1 className="title__text">Social Media Dashboard</h1>
             <p className="title__description">Total Followers: 23,004</p>
           </div>
+          <div className="border"></div>
           <ToggleButton />
         </header>
         <main className="main">
