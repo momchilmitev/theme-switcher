@@ -1,4 +1,5 @@
 import "./App.scss";
+import React from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import TotalCard from "../TotalCard/TotalCard";
 import OverviewCard from "../OverviewCard/OverviewCard";
@@ -53,6 +54,29 @@ function App() {
     ));
   };
 
+  const renderOverviewContent = () => {
+    return socials.map((media) => {
+      return (
+        <React.Fragment key={media.total}>
+          <OverviewCard
+            key={media.views}
+            icon={media.icon}
+            views={media.views}
+            likes=""
+            percentages={media.viewsPercentage}
+          />
+          <OverviewCard
+            key={media.likes}
+            icon={media.icon}
+            views=""
+            likes={media.likes}
+            percentages={media.likesPercentage}
+          />
+        </React.Fragment>
+      );
+    });
+  };
+
   return (
     <div className="app app--dark">
       <div className="container">
@@ -67,7 +91,7 @@ function App() {
           <section className="total">{renderTotalContent()}</section>
           <section className="overview">
             <h2 className="overview__title">Overview - Today</h2>
-            <OverviewCard />
+            {renderOverviewContent()}
           </section>
         </main>
       </div>
