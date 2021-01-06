@@ -17,7 +17,7 @@ const icons = {
 
 const TotalCard = ({ media }) => {
   return (
-    <article className="total-card total-card--dark">
+    <article className="total-card">
       <div className="total-card__user">
         <img src={icons[media.icon]} alt="social media icon" />
         <span>{media.user}</span>

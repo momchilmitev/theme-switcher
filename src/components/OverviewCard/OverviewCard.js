@@ -36,7 +36,7 @@ const OverviewCard = ({ icon, views, likes, percentages }) => {
   }
 
   return (
-    <article className="overview-card overview-card--dark">
+    <article className="overview-card">
       <div className="media-title">
         <span className="media-title__text">{views ? text : "Likes"}</span>
         <img

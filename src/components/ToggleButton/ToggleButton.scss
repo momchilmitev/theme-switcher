@@ -44,3 +44,10 @@
     transition: 0.4s;
   }
 }
+
+@media (min-width: 1025px) {
+  .toggle-btn {
+    width: 136px;
+    position: initial;
+  }
+}

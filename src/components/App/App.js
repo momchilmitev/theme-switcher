@@ -78,7 +78,7 @@ function App() {
   };
 
   return (
-    <div className="app app--dark">
+    <div className="app">
       <div className="background-one"></div>
       <div className="background-two"></div>
       <div className="container">
