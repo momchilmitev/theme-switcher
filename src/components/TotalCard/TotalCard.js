@@ -15,11 +15,22 @@ const icons = {
   down: downArrow,
 };
 
+const borderColors = {
+  facebook: { backgroundColor: "#178FF5" },
+  twitter: { backgroundColor: "#1DA1F2" },
+  instagram: {
+    background:
+      "linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%)",
+  },
+  youtube: { backgroundColor: "#C4032B" },
+};
+
 const TotalCard = ({ media, mode }) => {
   let className = mode ? "total-card total-card--dark" : "total-card";
 
   return (
     <article className={className}>
+      <div className="border-top" style={borderColors[media.icon]}></div>
       <div className="total-card__user">
         <img src={icons[media.icon]} alt="social media icon" />
         <span>{media.user}</span>
