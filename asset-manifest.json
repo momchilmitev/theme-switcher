@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/theme-switcher/static/css/main.95125d55.chunk.css",
+    "main.js": "/theme-switcher/static/js/main.af939826.chunk.js",
+    "main.js.map": "/theme-switcher/static/js/main.af939826.chunk.js.map",
+    "runtime-main.js": "/theme-switcher/static/js/runtime-main.82f83661.js",
+    "runtime-main.js.map": "/theme-switcher/static/js/runtime-main.82f83661.js.map",
+    "static/js/2.f640fa82.chunk.js": "/theme-switcher/static/js/2.f640fa82.chunk.js",
+    "static/js/2.f640fa82.chunk.js.map": "/theme-switcher/static/js/2.f640fa82.chunk.js.map",
+    "static/js/3.4163390a.chunk.js": "/theme-switcher/static/js/3.4163390a.chunk.js",
+    "static/js/3.4163390a.chunk.js.map": "/theme-switcher/static/js/3.4163390a.chunk.js.map",
+    "index.html": "/theme-switcher/index.html",
+    "static/css/main.95125d55.chunk.css.map": "/theme-switcher/static/css/main.95125d55.chunk.css.map",
+    "static/js/2.f640fa82.chunk.js.LICENSE.txt": "/theme-switcher/static/js/2.f640fa82.chunk.js.LICENSE.txt",
+    "static/media/icon-down.0c77426d.svg": "/theme-switcher/static/media/icon-down.0c77426d.svg",
+    "static/media/icon-facebook.8deee3e3.svg": "/theme-switcher/static/media/icon-facebook.8deee3e3.svg",
+    "static/media/icon-instagram.568b5795.svg": "/theme-switcher/static/media/icon-instagram.568b5795.svg",
+    "static/media/icon-twitter.a0c5f64d.svg": "/theme-switcher/static/media/icon-twitter.a0c5f64d.svg",
+    "static/media/icon-up.359200b2.svg": "/theme-switcher/static/media/icon-up.359200b2.svg",
+    "static/media/icon-youtube.cad14335.svg": "/theme-switcher/static/media/icon-youtube.cad14335.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82f83661.js",
+    "static/js/2.f640fa82.chunk.js",
+    "static/css/main.95125d55.chunk.css",
+    "static/js/main.af939826.chunk.js"
+  ]
+}
